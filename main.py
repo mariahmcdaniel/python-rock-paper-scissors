@@ -49,14 +49,14 @@ comp_move = s
 
 if computer == 0:
     comp_move  = r
-    print(f"    COMPUTER CHOSE:\n\n                                 {rock}")
+    print(f"    COMPUTER CHOSE:              ROCK\n\n                                 {rock}")
 
 elif computer == 1:
     comp_move = p
-    print(f"    COMPUTER CHOSE:\n\n                                 {paper}")
+    print(f"    COMPUTER CHOSE:              PAPER\n\n                                 {paper}")
 
 else:
-    print(f"    COMPUTER CHOSE:\n\n                                 {scissors}")
+    print(f"    COMPUTER CHOSE:              SCISSORS\n\n                                 {scissors}")
 
 
 
