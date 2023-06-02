@@ -64,11 +64,11 @@ result = comp_move.count(player)
 
 
 if result == 0:
-   print(f"You lost... Your Score Is: {score}")
    score -= 1
+   print(f"You lost... Your Score Is: {score}")
 elif result == 1:
     print(f"You tied -- Your Score Is: {score}")
 else:
-    print(f"You won!! Congrats. Your Score Is: {score}")
     score += 1      
+    print(f"You won!! Congrats. Your Score Is: {score}")
 
