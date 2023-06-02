@@ -27,6 +27,7 @@ scissors = '''
 ---.__(___)
 '''
 
+score = 0
 
 player = input("                  READY?\n\n\n                    Enter 'r' for rock, 'p' for paper, or 's' for scissors: ")
 r = ["s", "s", "r"]
@@ -35,11 +36,11 @@ s = ["p", "p", "s"]
 rules = [r,s,p]
 
 if player.lower() == "r":
-    print(rock)
+    print(f"    YOU CHOSE:\n                                 {rock}")
 elif player.lower() == "p":
-    print(paper)
+    print(f"    YOU CHOSE:\n                                 {paper}")
 elif player.lower() == "s":
-    print(scissors)        
+    print(f"    YOU CHOSE:\n                                 {scissors}")        
 
 computer = random.randint(0,2)
 
@@ -66,9 +67,11 @@ result = comp_move.count(player)
 
 
 if result == 0:
-   print("You lost")
+   print(f"You lost... Your Score Is: {score}")
+   score -= 1
 elif result == 1:
-    print("You tied")
+    print(f"You tied -- Your Score Is: {score}")
 else:
-    print("You won!!")      
+    print(f"You won!! Congrats. Your Score Is: {score}")
+    score += 1      
 
