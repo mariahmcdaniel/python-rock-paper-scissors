@@ -15,12 +15,19 @@ comp_move = s
 if computer == 0:
     comp_move  = r
 
-if computer == 1:
+elif computer == 1:
     comp_move = p
 
 print(computer)
 
 
+result = comp_move.count(player)
 
- 
+
+if result == 0:
+   print("You lost")
+elif result == 1:
+    print("You tied")
+else:
+    print("You won!!")      
 
