@@ -36,31 +36,28 @@ s = ["p", "p", "s"]
 rules = [r,s,p]
 
 if player.lower() == "r":
-    print(f"    YOU CHOSE:\n                                 {rock}")
+    print(f"                       YOU CHOSE:            ROCK\n\n                                 {rock}")
 elif player.lower() == "p":
-    print(f"    YOU CHOSE:\n                                 {paper}")
+    print(f"                       YOU CHOSE:            PAPER\n\n                                 {paper}")
 elif player.lower() == "s":
-    print(f"    YOU CHOSE:\n                                 {scissors}")        
+    print(f"                       YOU CHOSE:            SCISSORS\n\n                                 {scissors}")        
 
 computer = random.randint(0,2)
 
-print(computer)
 
 comp_move = s 
 
 if computer == 0:
     comp_move  = r
-    print(f"    COMPUTER CHOSE:\n                                 {rock}")
+    print(f"    COMPUTER CHOSE:\n\n                                 {rock}")
 
 elif computer == 1:
     comp_move = p
-    print(f"    COMPUTER CHOSE:\n                                 {paper}")
+    print(f"    COMPUTER CHOSE:\n\n                                 {paper}")
 
 else:
-    print(f"    COMPUTER CHOSE:\n                                 {scissors}")
+    print(f"    COMPUTER CHOSE:\n\n                                 {scissors}")
 
-print(computer)
-print(comp_move)
 
 
 result = comp_move.count(player)
